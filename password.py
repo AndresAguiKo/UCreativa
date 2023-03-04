@@ -79,10 +79,7 @@ def password_analyzer(password):
         return True
 
 def generate_password():
-    while True:
-        password = "".join([random.choice(string.ascii_letters + string.digits + "!@#$%^&*()_+-=[]{}|;':\",./<>?") for _ in range(12)])
-        if password_analyzer(password):
-            return password
+    
 
 
 password = input("Ingresa tu contraseña: ")
